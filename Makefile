@@ -1,17 +1,17 @@
 #====================================================================================================
 # Description:                 MakeFile
 #                              
-# Author:                      Dengxue Yan, Washington University in St. Louis
+# Author:                      Bryan Orabutt, Washington University in St. Louis
 #                              
-# Email:                       Dengxue.Yan@wustl.edu
+# Email:                       borabutt@wustl.edu
 #                             
 # Version:                     1.00
 #
 # Rev History:  
 #       <Author>        <Date>        <Hardware>     <Version>        <Description>
-#     Dengxue Yan   01-19-2017 20:00      --            1.00             Create
+#    Bryan Orabutt   09/06/2019 11:22     --            1.00             Create
 #====================================================================================================
-src = counter.v counter_tb.v
+src = problem1.v problem2.v problem3.v problem4.v problem5.v lab1_tb.v
 
 vcs_flag = -full64 -PP +lint=all,noVCDE +v2k -timescale=1ns/10ps
 
@@ -30,3 +30,4 @@ clean :
 	rm -rf simv.daidir
 	rm -f *.vcd
 	rm -f ucli.key
+	rm -f *.vcd.vpd

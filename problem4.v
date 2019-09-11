@@ -1,7 +1,7 @@
 
 module problem4(s, r, q, xq);
 
-input s, r,
+input s, r;
 output q, xq;
 
 nor(q, r, xq);
